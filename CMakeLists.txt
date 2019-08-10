@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(demo)
+include_directories(/usr/include/python2.7)
+add_library(demo SHARED demo.c)
+set_target_properties(demo PROPERTIES PREFIX "")
